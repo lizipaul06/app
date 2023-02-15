@@ -92,8 +92,6 @@ const visits: Visits = [
 	},
 ];
 
-
-
 export const getVisits = async (): Promise<Visits> => Object.values(visits);
 
 export const getVisitsBySupportWorkerId = async (

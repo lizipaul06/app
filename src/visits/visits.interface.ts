@@ -5,4 +5,4 @@ export interface Visit {
 	supportWorkerId: number;
 }
 
-export interface Visits extends Array<Visit>{}
+export interface Visits extends Array<Visit> {}

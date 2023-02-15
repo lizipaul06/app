@@ -7,11 +7,11 @@ export interface SupportWorker {
 	avatar?: string;
 }
 
-export interface SupportWorkers extends Array<SupportWorker>{}
+export interface SupportWorkers extends Array<SupportWorker> {}
 
- interface SupportWorkerVisit extends Visit {
-  name: string;
-  contractedHours: number;
+interface SupportWorkerVisit extends Visit {
+	name: string;
+	contractedHours: number;
 }
 
-export interface SupportWorkerVisits extends Array<SupportWorkerVisit>{}
+export interface SupportWorkerVisits extends Array<SupportWorkerVisit> {}

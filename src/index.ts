@@ -6,9 +6,8 @@ import { supportWorkersRouter } from "./supportWorkers/supportWorkers.router";
 
 dotenv.config();
 
-
 if (!process.env.PORT) {
-  process.exit(1);
+	process.exit(1);
 }
 
 const PORT: number = parseInt(process.env.PORT as string, 10);
@@ -21,8 +20,6 @@ app.use(express.json());
 app.use("/api/visits", visitsRouter);
 app.use("/api/support-workers", supportWorkersRouter);
 
-
 app.listen(PORT, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
+	console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
 });
-
